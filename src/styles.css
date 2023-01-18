@@ -13,7 +13,7 @@
     background-color: var(--accent-color);
     height: 100vh;
     width: 100vw;
-    border: 8px double var(--primary-color);
+    border: 10px solid var(--primary-color);
 }
 
 .hero-content {
@@ -35,7 +35,7 @@ body {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 110px;
     font-family: var(--heading-font-family);
     line-height: 1.5;
     color: var(--primary-color);
@@ -79,6 +79,13 @@ h2 {
     font-size: 40px;
     font-weight: 600;
     line-height: 2;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: left;
+    justify-content: left;
   }
 
   .main-body-content p {
@@ -114,6 +121,14 @@ h2 {
 @media (max-width: 920px) {
     .hero-content {
         padding: 0 20px;
+    }
+    .main-body{
+        padding: 50px 20px 50px;
+    }
+    .main-body-content {
+        padding: 0 15px 50px;
+        align-items: justify;
+        justify-content: center;
     }
     .hero-element h1 {
         font-size: 38px;
