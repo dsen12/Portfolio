@@ -43,7 +43,6 @@ p {
     background: var(--tertiary-color);
     text-align: center;
     padding: 250px 20px;
-    height: 900px;
 }
 
 .btn-branding {
