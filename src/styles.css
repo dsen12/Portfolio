@@ -11,9 +11,9 @@
 .hero-element {
     padding: 0 20px;
     background-color: var(--accent-color);
+    border: 10px solid var(--primary-color);
     height: 100vh;
     width: 100vw;
-    border: 10px solid var(--primary-color);
 }
 
 .hero-content {
@@ -28,15 +28,45 @@
   flex-direction: column;
 }
 
+.tools-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 15px 0;
+  letter-spacing: 1.5;
+}
 
 .main-body-content {
   margin-top: 100px;
 }
 
 .main-body-element {
-  padding: 0 100px;
+  padding: 100px 200px;
+  height: 100vh;
+  width: 100vw;
 }
 
+.about-me-element {
+  margin-bottom: 100px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+
+.tools-element {
+  margin-bottom: 100px;
+
+}
+
+.certificates-element {
+  margin-bottom: 100px;
+}
+.certificates {
+  filter: grayscale(0.6);
+}
 
 body {
     font-family: var(--primary-font-family);
@@ -91,6 +121,7 @@ h2 {
     display: flex;
     align-items: left;
     justify-content: left;
+    letter-spacing: 2px;
   }
 
   .main-body-content p {
@@ -128,6 +159,7 @@ h2 {
     border: 4px solid #2F3E46;
     float: right;
     background-color: #354F52;
+    margin-top: 80px;
   }
 
 @media (max-width: 768px) {
