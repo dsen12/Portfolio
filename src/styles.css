@@ -56,14 +56,22 @@
     letter-spacing: 2px;
 }
 
-.tools-element {
+.tools-element-about {
   margin-bottom: 100px;
 
+}
+.tools-element-homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  letter-spacing: 1.5;
+  text-align: center;
 }
 
 .certificates-element {
   margin-bottom: 100px;
 }
+
 .certificates {
   filter: grayscale(0.6);
 }
@@ -145,6 +153,7 @@ h2 {
   .homepage-buttons {
     display: flex;
     justify-content: center;
+    margin-top: 100px;
   }
 
   .homepage-about-button {
