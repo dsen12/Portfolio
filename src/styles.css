@@ -8,7 +8,7 @@
     --fifth-color: #CAD2C5;
 }
 
-.hero-element {
+.hero-container-homepage {
     padding: 0 5px;
     background-color: var(--accent-color);
     height: 100vh;
@@ -17,7 +17,7 @@
     background-size: cover;
 }
 
-.hero-content {
+.hero-content-homepage {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -57,14 +57,14 @@ padding: 100px 200px;
   letter-spacing: 1.5;
 }
 
-.main-body-content {
+.content-homepage {
   margin-top: 100px;
 }
 .main-body-content-about {
   margin-top: 0;
 }
 
-.main-body-element {
+.content-container-homepage {
   padding: 100px 200px;
   height: 100vh;
   width: 100vw;
@@ -182,16 +182,16 @@ h2 {
     font-weight: bold;
   }
 
-  .homepage-buttons {
+  .buttons-homepage {
     display: flex;
     justify-content: center;
     margin-top: 100px;
   }
 
-  .homepage-about-button {
+  .about-button-homepage {
     margin: 20px;
   }
-  .homepage-projects-button {
+  .projects-button-homepage {
     margin: 20px;
   }
 
