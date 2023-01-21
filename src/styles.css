@@ -8,6 +8,28 @@
     --fifth-color: #CAD2C5;
 }
 
+body {
+    font-family: var(--primary-font-family);
+    color: var(--primary-color);
+    background-color: var(--fifth-color);
+    height: 100vh;
+    width: 100vw;
+}
+
+h1 {
+    font-size: 110px;
+    font-family: var(--heading-font-family);
+    line-height: 1.5;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+    text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);}
+
+h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: white;
+}
 .hero-container-homepage {
     padding: 0 5px;
     background-color: var(--accent-color);
@@ -29,7 +51,7 @@
   flex-direction: column;
 }
 
-.hero-element-subpage {
+.hero-container-subpage {
   padding: 0 5px;
   background-color: var(--fifth-color);
   height: 30vh;
@@ -48,6 +70,46 @@ flex-direction: column;
 padding: 100px 200px;
 }
 
+
+.content-homepage {
+  margin-top: 100px;
+}
+.content-subpage {
+  margin-top: 0;
+}
+
+.content-container-homepage {
+  padding: 100px 200px;
+  height: 100vh;
+  width: 100vw;
+}
+.content-container-subpage {
+  padding: 50px 200px;
+  height: 100vh;
+  width: 100vw;
+}
+
+.about-content-container {
+  margin-bottom: 100px;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.tools-container-subpage {
+  margin-bottom: 100px;
+  
+}
+.tools-container-homepage {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  letter-spacing: 1.5;
+  text-align: center;
+}
+
 .tools-row {
   display: flex;
   align-items: center;
@@ -57,46 +119,7 @@ padding: 100px 200px;
   letter-spacing: 1.5;
 }
 
-.content-homepage {
-  margin-top: 100px;
-}
-.main-body-content-about {
-  margin-top: 0;
-}
-
-.content-container-homepage {
-  padding: 100px 200px;
-  height: 100vh;
-  width: 100vw;
-}
-.main-body-element-about {
-  padding: 50px 200px;
-  height: 100vh;
-  width: 100vw;
-}
-
-.about-me-element {
-  margin-bottom: 100px;
-    font-size: 18px;
-    font-weight: 400;
-    text-align: left;
-    line-height: 1.5;
-    letter-spacing: 2px;
-}
-
-.tools-element-about {
-  margin-bottom: 100px;
-
-}
-.tools-element-homepage {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  letter-spacing: 1.5;
-  text-align: center;
-}
-
-.certificates-element {
+.certificates-container {
   margin-bottom: 100px;
 }
 
@@ -104,37 +127,9 @@ padding: 100px 200px;
   filter: grayscale(0.6);
 }
 
-body {
-    font-family: var(--primary-font-family);
-    color: var(--primary-color);
-    background-color: var(--fifth-color);
-    height: 100vh;
-    width: 100vw;
-}
 
-h1 {
-    font-size: 110px;
-    font-family: var(--heading-font-family);
-    line-height: 1.5;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 30px;
-    text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);}
-
-h2 {
-    font-size: 24px;
-    letter-spacing: 3px;
-}
-
-.hero-content h2 {
-  color: white;
-  text-align: ;
-}
-
-.hero-content p {
-    font-size: 36px;
-    line-height: 1;
-    color: var(--primary-color);
+.content-container-homepage h2 {
+  font-size: 16px;
 }
 
 .hero-btn-branding {
@@ -150,8 +145,8 @@ h2 {
     border: 1px solid white;
   }
 
-  .main-body-content h2 {
-    font-size: 40px;
+  .content-homepage h2 {
+    font-size: 400px;
     font-weight: 600;
     line-height: 2;
     height: 100%;
@@ -204,28 +199,24 @@ h2 {
   }
 
 @media (max-width: 768px) {
-    .hero-content {
+    .hero-container-homepage {
         padding: 0 20px;
     }
-    .main-body-element{
+    .content-container-homepage{
         padding: 50px 20px 50px;
     } 
-    .main-body-content {
+    .content-homepage {
         align-items: center;
         justify-content: center;
         text-align: center;
     }
-    .hero-element h1 {
+    .hero-content-homepage h1 {
         font-size: 50px;
         line-height: 1.5;
     }
 
-    .hero-element h2 {
+    .hero-content-homepage h2 {
         font-size: 20px;
-    }
-    .hero-element p {
-        font-size: 25px;
-        line-height: 1;
     }
   
     .certificates {
@@ -233,6 +224,7 @@ h2 {
       height: auto;
       margin-bottom: 20px;
     }
+
     .head-shot{
       float: none;
       align-items: center;
