@@ -244,7 +244,28 @@ padding: 100px 250px;
     letter-spacing: 2px;
   }
 
-  .projects-content-container img {}
+  .contact-content-container {
+    display: flex;
+    justify-content:left;
+    margin-top: 100px;
+  }
+
+  .contact-content-container div {
+    margin-right: 100px;
+  }
+
+  .contact-content-container a {
+    text-decoration: none;
+    color: var(--primary-color);
+    background-color: var(--accent-color, 0.1);
+    padding: 2px 4px;
+  }
+
+  .contact-content-container a:hover {
+    text-decoration: none;
+    color: white;
+  }
+
 
   .tag-line {
     font-size: 14px;
