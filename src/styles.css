@@ -160,7 +160,7 @@ padding: 100px 250px;
     border: 1px solid white;
   }
 
-  .content-homepage h2 {
+  .subheading {
     font-size: 60px;
     font-weight: 200;
     line-height: 2;
@@ -233,7 +233,7 @@ padding: 100px 250px;
     align-items: center;
   }
 
-  .projects-content-container h2 {
+  .sub-subheading {
     font-size: 25px;
   }
 
@@ -263,6 +263,9 @@ padding: 100px 250px;
     }  
     .hero-container-subpage {
         padding: 0 20px;
+    }
+    hero-content-subpage h1 {
+      font-size: ;
     }
     .content-container-homepage{
         padding: 50px 20px 50px;
