@@ -201,6 +201,10 @@ margin: 100px 250px;
   margin-bottom: 20px;
 }
 
+.tools-content {
+  font-size: 18px;
+}
+
 .certificates-container h2 {
   font-size: 40px;
   text-transform: uppercase;
@@ -216,8 +220,70 @@ margin: 100px 250px;
   filter: grayscale(0.6);
 }
 
+.head-shot {
+  border-radius:100%;
+  border: 18px solid #2F3E46;
+  background-color: #52796f;
+  display: block;
+  margin: 30px auto;
+}
 
-  
+.heading-about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sub-subheading {
+  font-size: 26px;
+}
+
+.projects-content-container p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+
+.contact-content-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.contact-content-container div {
+  margin-bottom: 50px;
+}
+
+.content-subpage h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tools-container-subpage h2, .certificates-container h2 {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+.contact-content-container a {
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--accent-color, 0.1);
+  padding: 2px 4px;
+  font-size: larger;
+}
+
+.contact-content-container a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.tag-line {
+  font-size: 14px;
+  font-family: cursive;
+  padding-bottom: 10px;
+}
 
 /* Buttons */
 
@@ -225,7 +291,7 @@ margin: 100px 250px;
   border-radius: 4px;
   font-size: 30px;
   padding: 8px 26px;
-  transition: all 100ms ease;
+  transition: all 100ms ease-in-out;
   color: white;
 }
 
@@ -258,73 +324,26 @@ margin: 100px 250px;
 .buttons-homepage {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
-.about-button-homepage {
+.about-button-homepage, .projects-button-homepage {
   margin: 20px;
   font-size: 15px;
   font-family: var(--primary-font-family);
   font-weight: normal;
-
-}
-.projects-button-homepage {
-  margin: 20px;
 }
 
-.head-shot {
-  border-radius:100%;
-  border: 18px solid #2F3E46;
-  background-color: #52796f;
-  display: block;
-  margin: 30px auto;
+.about-button-homepage:hover {
+  color: var(--fifth-color);
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
 }
-
-.heading-about {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.projects-button-homepage:hover {
+  color: var(--fifth-color);
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
 }
-
-.sub-subheading {
-  font-size: 26px;
-}
-
-.projects-content-container p {
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 2px;
-}
-
-.contact-content-container {
-  display: flex;
-  justify-content:left;
-  margin-top: 100px;
-}
-
-.contact-content-container div {
-  margin-right: 100px;
-}
-
-.contact-content-container a {
-  text-decoration: none;
-  color: var(--primary-color);
-  background-color: var(--accent-color, 0.1);
-  padding: 2px 4px;
-}
-
-.contact-content-container a:hover {
-  text-decoration: none;
-  color: white;
-}
-
-.tag-line {
-  font-size: 14px;
-  font-family: cursive;
-  padding-bottom: 10px;
-}
-
 .scroll-up-button {
   font-size: 16px;
   margin-bottom: 60px;
@@ -340,6 +359,51 @@ margin: 100px 250px;
 
 .scroll-up-text:hover {
   color: black;
+}
+
+/* Footer */
+
+footer {
+  margin: 100px 50px;
+}
+
+footer .social-links a {
+  color: var(--tertiary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 30px;
+  margin: 0 20px;
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+footer .social-links a:hover {
+  color: var(--fifth-color);
+  background-color: var(--tertiary-color);
+  border: 1px solid var(--fifth-color);
+}
+
+footer .reach-out {
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 300px;
+  padding: 5px;
+  background-color: var(--accent-color);
+}
+
+.coder {
+  margin-top:10px; 
+  text-align: center;
+  font-size: 14px;
+}
+
+.coder a {
+  text-decoration: none;
+  color: inherit;
+}
+.coder a:hover {
+  text-decoration: underline;
+  color: #52796f;
 }
 
 @media (max-width: 768px) {
