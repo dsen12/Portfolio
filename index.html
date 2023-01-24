@@ -13,33 +13,38 @@
     <title>Front-End Developer | Dilhani Seneviratne</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div id="top">
+    <nav class="navbar sticky-top navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">
+            <div class="logo">
+                ・D/S・
+            </div>
+          </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-              <a class="nav-link" href="/about.html">About</a>
-              <a class="nav-link" href="/projects.html">Projects</a>
-              <a class="nav-link" href="/contact.html">Contact</a>
+              <a class="nav-link active" aria-current="page" href="/">Home</a>
+              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="projects.html">Projects</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </div>
           </div>
         </div>
       </nav>
-    <div class="hero-container-homepage text-center">
-        <div class="hero-content-homepage">
-            <h1 class="">Dilhani Seneviratne</h1>
-            <h2 class="mb-5">Front-End Developer, based in Australia</h2>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
-            <div>
-                <a href="index.html#content-container" class="btn hero-btn-branding mt-4">
-                    <i class="fas fa-angle-double-down"></i>
-                </a>
+    <div class="hero-container-homepage text-center" id="7">
+        <div class="homepage-bg"></div>
+            <div class="hero-content-homepage">
+                <h1 class="">Dilhani Seneviratne</h1>
+                <h2 class="mb-5">Front-End Developer, based in Australia</h2>
+                <div>
+                    <a href="index.html#content-container" class="btn hero-btn-branding">
+                        <i class="fas fa-angle-double-down"></i>
+                    </a>
+                </div>
             </div>
-        </div>
     </div>
     <div class="content-container-homepage" id="content-container">
         <div class="content-homepage">
@@ -111,15 +116,22 @@
                     </div>
                 </div>
             </div>
-                <div class="buttons-homepage">
-                    <div class="about-button-homepage">
-                        <a href="/about.html" class="btn btn-branding">ABOUT</a>
-                    </div>
-                    <div class="projects-button-homepage">
-                        <a href="/projects.html" class="btn btn-branding">PROJECTS</a>
-                    </div>
+            <div class="buttons-homepage">
+                <div class="about-button-homepage">
+                    <a href="/about.html" class="btn btn-branding">ABOUT</a>
                 </div>
+                <div class="projects-button-homepage">
+                    <a href="/projects.html" class="btn btn-branding">PROJECTS</a>
+                </div>
+            </div>
+            <div class="scroll-up-button">
+                <a href="index.html#top" class="scroll-up-text" title="scroll-to-top">
+                    Back to top <i class="fas fa-angle-double-up"></i>
+                </a>
+            </div>
         </div>
     </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 </body>
 </html>
