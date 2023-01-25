@@ -47,6 +47,9 @@ h2 {
   color: var(--accent-color);
 }
 
+.navbar-brand {
+  margin-left: 20px;
+}
 .logo {
   font-size: 30px;
   border-radius: 5px;
@@ -57,9 +60,6 @@ h2 {
   font-weight: 600;
 }
 
-.navbar-brand {
-  margin-left: 20px;
-}
 
 .active {
   font-weight: 600;
@@ -79,7 +79,7 @@ h2 {
   width: 100vw;
   background-image: url(/media/background.jpeg);
   background-size: cover;
-  filter: saturate(0.8);
+  filter: saturate(80%);
 }
 
 .hero-content-homepage {
@@ -218,7 +218,12 @@ margin: 100px 250px;
 
 .certificates {
   filter: grayscale(0.6);
+  box-shadow: 1px 0px 2px rgba(0, 0, 0, 0.1);
 }
+
+.certificates:hover {
+  filter: none;
+  transition: all 200ms ease-in-out;}
 
 .head-shot {
   border-radius:100%;
@@ -226,6 +231,8 @@ margin: 100px 250px;
   background-color: #52796f;
   display: block;
   margin: 30px auto;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.3);
+
 }
 
 .heading-about {
@@ -243,8 +250,37 @@ margin: 100px 250px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 2px;
+  margin-top:  30px;
 }
 
+.projects-content-container h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 2;
+  line-height: 1.5;
+}
+.projects-content-container {
+  margin-top: 100px;
+}
+
+.card {
+  background-color: rgba(132, 169, 140, 0.1);
+  box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1);;
+}
+
+.card-title {
+font-size: 24px;
+letter-spacing: 3px;
+color: white !important;
+font-weight: 300;
+margin-top: 15px;
+}
+
+#projects-container {
+  margin-top: 300px;
+  padding: 0 200px;
+}
 .contact-content-container {
   display: flex;
   justify-content: center;
@@ -256,7 +292,14 @@ margin: 100px 250px;
   margin-bottom: 50px;
 }
 
-.content-subpage h2 {
+.hero-content-subpage .subheading {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  font-size: 30px;
+}
+
+.contact .subheading {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -334,16 +377,12 @@ margin: 100px 250px;
   font-weight: normal;
 }
 
-.about-button-homepage:hover {
+.about-button-homepage:hover, .projects-button-homepage:hover  {
   color: var(--fifth-color);
   background-color: var(--tertiary-color);
   border-radius: 5px;
 }
-.projects-button-homepage:hover {
-  color: var(--fifth-color);
-  background-color: var(--tertiary-color);
-  border-radius: 5px;
-}
+
 .scroll-up-button {
   font-size: 16px;
   margin-bottom: 60px;
@@ -352,13 +391,13 @@ margin: 100px 250px;
 }
 
 .scroll-up-text {
-  color: black;
+  color: var(--primary-color);
   font-weight: 300;
   text-decoration: none;
 }
 
 .scroll-up-text:hover {
-  color: black;
+  color: var(--primary-color);
 }
 
 /* Footer */
