@@ -79,7 +79,7 @@ h2 {
   width: 100vw;
   background-image: url(/media/background.jpeg);
   background-size: cover;
-  filter: saturate(80%);
+  filter: saturate(60%);
 }
 
 .hero-content-homepage {
@@ -106,19 +106,16 @@ h2 {
   width: 100vw;
 }
 
-.tools-container-homepage {
+.tools-with-icons {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   letter-spacing: 1.5;
   text-align: center;
+  flex-direction: row;
 }
 
-.tools-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-direction: row;
+.tools-with-icons div {
   padding: 15px 0;
   letter-spacing: 1.5;
 }
@@ -171,6 +168,15 @@ margin: 100px 250px;
 
     /* Content */
 
+.tools-row-subpage {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding: 15px 0;
+  letter-spacing: 1.5;
+}
+    
 .content-subpage {
   margin-bottom: 100px;
 }
@@ -450,11 +456,11 @@ footer .reach-out {
   h2 {
     font-size: 24px;
   }
-
+/*
   .hero-content-homepage h2 {
-    font-size: ;
+    
   }
-
+*/
   .content-container-homepage {
     padding: 10px 20px;
     height: 100vh;
@@ -507,7 +513,16 @@ footer .reach-out {
   .buttons-homepage {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     margin-top: 80px;
+  }
+
+  .tools-with-icons {
+    display: flex;
+    align-items: center;
+    letter-spacing: 1.5;
+    text-align: center;
+    flex-direction: column;
   }
 }
