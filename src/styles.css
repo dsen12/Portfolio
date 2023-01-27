@@ -15,7 +15,7 @@ body {
 }
 
 h1 {
-  font-size: 110px;
+  font-size: 96px;
   font-family: var(--heading-font-family);
   line-height: 1.5;
   color: white;
@@ -84,10 +84,9 @@ h2 {
 
 .hero-content-homepage {
   position: absolute;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   top: 0;
-  left: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,12 +106,10 @@ h2 {
 }
 
 .tools-with-icons {
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
   letter-spacing: 1.5;
   text-align: center;
-  flex-direction: row;
 }
 
 .tools-with-icons div {
@@ -121,41 +118,13 @@ h2 {
 }
 
 .subheading {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 200;
   line-height: 2;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
   display: flex;
   align-items: left;
   justify-content: left;
   letter-spacing: 2px;
-}
-
-/* Subpage */
-    /* Hero */
-
-.hero-container-subpage {
-  padding: 0 5px;
-  background-color: var(--fifth-color);
-  margin: 200px 0px;
-}
-
-.hero-content-subpage {
-position: absolute;
-top: 0;
-left: 0;
-display: flex;
-align-items: left;
-justify-content: left;
-flex-direction: column;
-margin: 100px 250px;
-}
-
-.hero-content-subpage h1 {
-  color: #2F3E46;
 }
 
 .content-homepage p {
@@ -164,6 +133,25 @@ margin: 100px 250px;
   text-align: left;
   line-height: 1.5;
   letter-spacing: 2px;
+}
+
+/* Subpage */
+    /* Hero */
+
+.hero-container-subpage {
+  background-color: var(--fifth-color);
+  margin: 50px 0px;
+}
+
+.hero-content-subpage {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin: 50px 250px;
+}
+
+.hero-content-subpage h1 {
+  color: #2F3E46;
 }
 
     /* Content */
@@ -238,7 +226,6 @@ margin: 100px 250px;
   display: block;
   margin: 30px auto;
   box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.3);
-
 }
 
 .sub-subheading {
@@ -261,7 +248,7 @@ margin: 100px 250px;
   line-height: 1.5;
 }
 .projects-content-container {
-  margin-top: 100px;
+  margin-top: 20px;
 }
 
 .card {
@@ -278,7 +265,6 @@ margin-top: 15px;
 }
 
 #projects-container {
-  margin-top: 300px;
   padding: 0 200px;
 }
 .contact-content-container {
@@ -292,14 +278,12 @@ margin-top: 15px;
   margin-bottom: 50px;
 }
 
-.hero-content-subpage .subheading {
-  display: flex;
-  align-items: left;
-  justify-content: left;
+.hero-content-subpage h2 {
   font-size: 30px;
 }
 
 .contact .subheading {
+  font-size: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -404,6 +388,10 @@ margin-top: 15px;
 
 footer {
   margin: 100px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .social-links a {
@@ -423,7 +411,6 @@ footer .social-links a:hover {
 
 footer .reach-out {
   border-radius: 5px;
-  margin: 0 auto;
   margin-bottom: 30px;
   width: 300px;
   padding: 5px;
@@ -431,7 +418,7 @@ footer .reach-out {
 }
 
 .coder {
-  margin-top:10px; 
+  margin-top: 10px; 
   text-align: center;
   font-size: 14px;
 }
@@ -447,82 +434,173 @@ footer .reach-out {
 
 /* MEDIA QUERY */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   h1 {
-    font-size: 30px;
-    margin: 0 auto;
-  }
-
+    font-size: 20px;
+    text-indent: 5px;
+    }
+  
   h2 {
-    font-size: 24px;
+    font-size: 15px;
   }
-/*
-  .hero-content-homepage h2 {
-    
+  
+  /* Homepage */
+
+  .content-homepage {
+    margin-top: 25px;
   }
-*/
+  
   .content-container-homepage {
-    padding: 10px 20px;
+    padding: 25px 50px;
     height: 100vh;
     width: 100vw;
   }
 
-  .hero-container-subpage {
-    padding: 0 5px;
-    margin: 200px 0px;
+  .content-homepage .subheading {
+    font-size: 20px;
   }
   
-  .hero-content-subpage {
-    margin: 0;
-    padding: 100px 25px 20px;
-  }
-
-  .hero-content-subpage h1 {
-    font-size: 55px;
-    display: flex;
-    justify-content: center;
-    }
-
-  .content-container-subpage {
-    padding: 0px 25px;
-  }
-
-  .about-content img {
-    margin-left: 0;
-  }
-
-  .tools-container-subpage h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-
-  .certificates-container h2 {
-    display: flex;
-    justify-content: center;
-    font-size: 28px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-
-  .certificates {
-    margin-bottom: 15px;
+  .content-homepage p {
+    font-size: 15px;
   }
 
   .buttons-homepage {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin-top: 80px;
+    align-items: center;
+    margin-top: 30px;
   }
 
-  .tools-with-icons {
+   /* Subpage */
+
+  .hero-container-subpage {
+    width: 100vw;
+    margin: 0px;
+  }
+  
+  .hero-content-subpage {
+    width: 100vw;
+    margin: 0;
+    padding: 25px 50px;
+  }
+  
+  .hero-content-subpage h1 {
+    font-size: 28px;
+  }
+
+  .hero-content-subpage h2 {
+    font-size: 17px;
+  }
+
+   .content-subpage {
+    margin-bottom: 25px;
+  }
+  
+  .content-container-subpage {
+    padding: 25px 50px 0px;
+  }
+
+  /* About */
+  .about-content-container {
+    font-size: 16px;
+    text-align: justify;
+    letter-spacing: 1.5;
+  }
+
+  .about-content img {
+    margin: 0 auto;
+  }
+
+  .tools-container-subpage h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .tools-content {
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .certificates-container h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  
+  .certificates-container {
+    margin-bottom: 50px;
+  }
+
+  .certificates {
+    margin-bottom: 20px;
+  }
+
+  .tools-row-subpage {
+    display: flex;
+    flex-direction: column;
+  }
+
+   /* Projects */
+
+  .projects-content-container {
+  display: flex;
+  flex-direction: column;
+  }
+
+  .project-images {
+  display: none;
+  }
+  
+  #projects-container {
+  padding: 0 50px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+  }
+
+   /* Contact */
+   .contact-content-container {
+    margin: 50px;
+   }
+
+   .contact .subheading {
+    font-size: 30px;
     display: flex;
     align-items: center;
-    letter-spacing: 1.5;
-    text-align: center;
-    flex-direction: column;
+    justify-content: center;
+  }
+
+   /* Footer */
+
+  footer {
+    margin: 50px 50px;
+  }
+
+  footer .social-links a {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+  }
+
+}
+
+@media (max-width: 900px) {
+  .hero-content-subpage h1 {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
