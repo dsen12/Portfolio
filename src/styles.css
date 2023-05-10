@@ -19,10 +19,12 @@ h1 {
   font-family: var(--heading-font-family);
   line-height: 1.5;
   color: white;
-  text-transform: uppercase;
-  letter-spacing: 20px;
+  text-transform: capitalize;
+  letter-spacing: 10px;
   text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.2);
-  font-weight: 600;}
+  font-weight: 600;
+  margin: 0;
+}
 
 h2 {
   font-size: 24px;
@@ -77,9 +79,9 @@ h2 {
 .homepage-bg {
   height: 100vh;
   width: 100vw;
-  background-image: url(/media/background.jpeg);
+  /*background-image: url(/media/background.jpeg);
   background-size: cover;
-  filter: saturate(60%);
+  filter: saturate(60%);*/
 }
 
 .hero-content-homepage {
@@ -93,10 +95,18 @@ h2 {
   flex-direction: column;
 }
 
+.hero-content-homepage p {
+  color: white;
+  font-size: 30px;
+}
     /* Content */
 
 .content-homepage {
   margin-top: 100px;
+}
+
+.content-homepage .subheading {
+  font-size: 60px;
 }
 
 .content-container-homepage {
@@ -117,22 +127,13 @@ h2 {
   letter-spacing: 1.5;
 }
 
-.subheading {
-  font-size: 50px;
-  font-weight: 200;
-  line-height: 2;
-  display: flex;
-  align-items: left;
-  justify-content: left;
-  letter-spacing: 2px;
-}
 
 .content-homepage p {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   text-align: left;
   line-height: 1.5;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 /* Subpage */
@@ -224,7 +225,7 @@ h2 {
   border: 18px solid #2F3E46;
   background-color: #52796f;
   display: block;
-  margin: 30px auto;
+  margin: 0 auto;
   box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -267,27 +268,89 @@ margin-top: 15px;
 #projects-container {
   padding: 0 200px;
 }
-.contact-content-container {
+.contact-links-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  margin-top: 100px;
 }
 
-.contact-content-container div {
+.contact-content-container {
+  display: flex;
+  flex-direction: row;
+}
+.contact-form-container {
+  margin-left: 150px;
+}
+
+.contact-form-container h5 {
+ font-weight: 400;
+ font-size: 19px;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.contact-form-container input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid var(--secondary-color);
+}
+
+.contact-form-container .text {
+  padding-bottom: 100px;
+}
+
+.contact-form-container .text::placeholder {
+  position: absolute;
+}
+
+.contact-form-container button {
+  position: relative;
+  margin: auto;
+  font-size: 16px;
+  font-family: var(--primary-font-family);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  line-height: 27px;
+  padding: 15px 30px;
+  font-weight: 600;
+  width: 40%;
+  background-color: #CAD2C5;
+}
+  
+.contact-form-container button:hover  {
+  color: var(--fifth-color);
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+}
+
+.contact-links-container div {
   margin-bottom: 50px;
 }
 
-.hero-content-subpage h2 {
+.hero-content-subpage .contact-subheading {
+  font-size: 45px;
+  font-weight: 200;
+  line-height: 2;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  letter-spacing: 2px;
+}
+.hero-content-subpage .projects-subheading {
   font-size: 30px;
+  font-weight: 200;
+  line-height: 2;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  letter-spacing: 2px;
 }
 
-.contact .subheading {
-  font-size: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .tools-container-subpage h2, .certificates-container h2 {
   display: flex;
   align-items: left;
@@ -311,6 +374,7 @@ margin-top: 15px;
   font-family: cursive;
   padding-bottom: 10px;
 }
+
 
 /* Buttons */
 
@@ -354,7 +418,7 @@ margin-top: 15px;
   margin-top: 80px;
 }
 
-.about-button-homepage, .projects-button-homepage {
+.about-button-homepage, .projects-button-homepage  {
   margin: 20px;
   font-size: 15px;
   font-family: var(--primary-font-family);
@@ -421,6 +485,7 @@ footer .reach-out {
   margin-top: 10px; 
   text-align: center;
   font-size: 14px;
+  margin-bottom: 0;
 }
 
 .coder a {
