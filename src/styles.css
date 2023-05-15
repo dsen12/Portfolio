@@ -573,7 +573,7 @@ footer .reach-out {
   }
 
   .content-homepage .subheading {
-    font-size: 30px;
+    font-size: 45px;
     margin-bottom: 25px;
     text-align: center;
   }
@@ -748,6 +748,7 @@ footer .reach-out {
     flex-direction: row;
     margin-bottom: 20px;
     padding: 15px 15px;
+    text-decoration: none;
   }
 
 }
