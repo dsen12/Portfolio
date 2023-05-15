@@ -279,6 +279,7 @@ margin-top: 15px;
 #projects-container {
   padding: 0 250px;
 }
+
 .contact-links-container {
   display: flex;
   flex-direction: column;
@@ -705,9 +706,14 @@ footer .reach-out {
   font-size: 22px;
   }
 
+  .contact-content-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   .contact-form-container {
-    margin: 50px 0;
-    margin-left: 0px;
+    margin: 0;
+    padding: 0;
   }
 
   .contact-form-container form {
