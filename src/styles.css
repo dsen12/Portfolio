@@ -700,41 +700,41 @@ footer .reach-out {
   font-family: var(--primary-font-family);  
   }
 
-   /* Contact */
-   .hero-content-subpage .contact-subheading {
+  /* Contact */
+  .hero-content-subpage .contact-subheading {
+  font-size: 22px;
+  }
+
+  .contact-form-container {
+    margin: 50px 0;
+  }
+
+  .contact-form-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .contact-form-container button {
+    width: 50%;
+    line-height: 27px;
+    padding: 10px 15px;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--fifth-color);
+    background-color: var(--tertiary-color);
+  }
+
+  .contact-form-container h5 {
+    text-align: center;
+    }
+
+  .contact-links-container {
+    text-align: center;
+  }
+  .contact-links-container .sub-subheading {
     font-size: 22px;
-    }
-  
-    .contact-form-container {
-      margin: 50px 0;
-    }
-
-    .contact-form-container form {
-      display: flex;
-      flex-direction: column;
-      width: 300px;
-    }
-
-    .contact-form-container button {
-      width: 50%;
-      line-height: 27px;
-      padding: 10px 15px;
-      font-weight: 600;
-      font-size: 15px;
-      color: var(--fifth-color);
-      background-color: var(--tertiary-color);
-    }
-
-    .contact-form-container h5 {
-      text-align: center;
-     }
-
-    .contact-links-container {
-      text-align: center;
-    }
-    .contact-links-container .sub-subheading {
-      font-size: 22px;
-    }
+  }
 
 
    /* Footer */
