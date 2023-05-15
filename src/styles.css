@@ -432,7 +432,7 @@ margin-top: 15px;
 
 .btn-branding-projects:hover {
   color: var(--fifth-color);
-  background-color: var(-);
+  background-color: var(--tertiary-color);
 }
 
 .buttons-homepage {
